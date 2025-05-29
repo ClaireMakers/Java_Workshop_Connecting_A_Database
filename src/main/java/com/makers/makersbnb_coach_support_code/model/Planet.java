@@ -1,4 +1,4 @@
-package model;
+package com.makers.makersbnb_coach_support_code.model;
 
 import jakarta.persistence.*;
 
@@ -13,9 +13,9 @@ public class Planet {
     private Long id;
     private String description;
     private String name;
-    private Number circumference;
+    private Integer circumference;
 
-    public Planet(String name, String description, Number circumference) {
+    public Planet(String name, String description, Integer circumference) {
         this.name = name;
         this.description = description;
         this.circumference = circumference;
@@ -27,6 +27,6 @@ public class Planet {
     public String getDescription() { return this.description; }
     public void setDescription(String description) { this.description = description; }
 
-    public Number getCircumference() { return this.circumference; }
-    public void setCircumference(Number circumference) { this.circumference = circumference; }
+    public Integer getCircumference() { return this.circumference; }
+    public void setCircumference(Integer circumference) { this.circumference = circumference; }
 }

@@ -1,6 +1,6 @@
-package com.makers.makersbnb_coach_support_code;
+package com.makers.makersbnb_coach_support_code.controller;
 
-import model.Planet;
+import com.makers.makersbnb_coach_support_code.model.Planet;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -18,7 +18,7 @@ public class PlanetsController {
         ModelAndView marsInfo = new ModelAndView("/MarsInfo");
         String name = "Mars";
         String marsDescription = "The planet Mars is half the size of the Earth.";
-        Number circumference = 21344;
+        Integer circumference = 21344;
         Planet mars = new Planet(name, marsDescription, circumference);
 
         marsInfo.addObject("marsDescription", mars.getDescription() );
